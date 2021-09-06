@@ -17,13 +17,13 @@ function Home(props) {
         <div className="container">
             <div className="row">
                 <div className="col-md m-1">
-                    <RenderCard item={props.campsite} />
+                    <RenderCard item={props.about} />
                 </div>
                 <div className="col-md m-1">
-                    <RenderCard item={props.promotion} />
+                    <RenderCard item={props.account} />
                 </div>
                 <div className="col-md m-1">
-                <RenderCard item={props.partner} />
+                <RenderCard item={props.sitemap} />
                 </div>
             </div>
         </div>
