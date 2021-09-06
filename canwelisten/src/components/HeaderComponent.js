@@ -7,7 +7,6 @@ class Header extends Component {
 
     constructor(props) {
         super(props);
-        
         this.toggleNav=this.toggleNav.bind(this);
         this.state = {
             isNavOpen: false
@@ -34,7 +33,7 @@ class Header extends Component {
                 </Jumbotron>
                 <Navbar dark sticky="top" expand="md">
                     <div className="container">
-                        <NavbarBrand className="mr-auto" href="/"><img src="public/CanWeListenLogo.png"
+                        <NavbarBrand className="mr-auto" href="/"><img src="public/assets/CanWeListen.png"
                         height="30" width="30" alt="Can We Listen" /></NavbarBrand>
                         <NavbarToggler onClick={this.toggleNav} />
                         <Collapse isOpen={this.state.isNavOpen} navbar>
