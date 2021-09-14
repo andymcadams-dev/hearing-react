@@ -1,29 +1,16 @@
 import React from 'react';
+import { ACCOUNT } from '../shared/account';
 import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
 
-function RenderCard({about}) {
-    return (
-        <Card>
-            <CardImg src={about.image} alt={about.name} />
-            <CardBody>
-                <CardTitle>{about.name}</CardTitle>
-                <CardText>{about.description}</CardText>
-            </CardBody>
-        </Card>
-    )
-}
+
+
 function Home(props) {
+    console.log(props)
     return (
         <div className="container">
             <div className="row">
                 <div className="col-md m-1">
-                    <RenderCard item={props.about} />
-                </div>
-                <div className="col-md m-1">
-                    <RenderCard item={props.account} />
-                </div>
-                <div className="col-md m-1">
-                <RenderCard item={props.sitemap} />
+                    <RenderCard ACCOUNT={ACCOUNT} />
                 </div>
             </div>
         </div>
